@@ -1,0 +1,29 @@
+# main links links
+main:
+  - title: "Components"
+    url: /components/
+
+  - title: "ABOUT ROBOCUP-RESCUE"
+    url: /about/
+
+  - title: "TEAM"
+    url: /team/
+
+  - title: "WEBSITE CREDITS"
+    url: /credits/
+
+sidenav:
+  - title: Components
+    url: /components/
+    children:
+      - title: "Ros on Intel-NUC"
+        url: /components/ros-on-nuc/
+      - title: "IMU"
+        url: /components/imu/
+      - title: "Motor-Controller"
+        url: /components/motor-controller/
+      - title: "Spotlight"
+        url: /components/spotlight/
+      - title: "Buck-Converter"
+        url: /components/buck-converter/
+
