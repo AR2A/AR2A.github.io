@@ -98,7 +98,7 @@ But I must explain to you how all this mistaken idea of denouncing pleasure and 
 
 ## Power Supply
 
-But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
+The robot is supplied with voltage by a battery pack. The voltage supply of most of the components is handled by the Intel NUC board via USB. The Intel NUC board itself and the highpower spotlights need 19 V and the Microsoft Kinect 12 V. The previous prototype setup with linear regulator and heat sink has been replaced. 
 [Read more...](/components/buck-converter/)
 
 {% include gallery id="gallery_buck-converter" caption="" %}

@@ -62,6 +62,7 @@ gallery_buck-converter:
 
 ## Ros on Intel-NUC
 
+ROS is the abbreviation for Robot Operating System. It provides an extensive framework for robot development, tools and more. It has been used for data communication, processing and visualization.
 All components are connected via USB to an Intel NUC board and can be managed via ROS.
 [Read more...](/components/ros-on-nuc/)
 
