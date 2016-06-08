@@ -1,11 +1,9 @@
 ---
 layout: single
-title: motor-controller-highpower-motorshield
+title: ROS MiniImu Calibration and Sensor Fusion
 sidebar:
   nav: "sidenav"
 ---
-
-# ROS MiniImu Calibration and Sensor Fusion
 
 ## Overview
 This is a [ROS] package developed to calibrate and fuse the orientation data provided by an Polulu MiniImu v9.  

@@ -9,7 +9,7 @@ main:
   - title: "TEAM"
     url: /team/
 
-  - title: "WEBSITE CREDITS"
+  - title: "ABOUT"
     url: /credits/
 
 sidenav:
@@ -25,5 +25,5 @@ sidenav:
       - title: "Spotlight"
         url: /components/spotlight/
       - title: "Buck-Converter"
-        url: /components/motor-controller/
+        url: /components/buck-converter/
 

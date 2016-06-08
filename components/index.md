@@ -62,7 +62,7 @@ gallery_buck-converter:
 
 ## Ros on Intel-NUC
 
-All other components are connected via USB to an Intel NUC board and can be managed via ROS.
+All components are connected via USB to an Intel NUC board and can be managed via ROS.
 [Read more...](/components/ros-on-nuc/)
 
 {% include gallery id="gallery_ros-on-nuc" caption="" %}
@@ -96,7 +96,7 @@ But I must explain to you how all this mistaken idea of denouncing pleasure and 
 
 
 
-## Buck-Converter
+## Power Supply
 
 But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
 [Read more...](/components/buck-converter/)

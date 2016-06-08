@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Über RoboCup Rescue
+title: About RoboCup Rescue
 
 gallery_robocup_rescue:
   - url: /about/arena_yellow.jpg
@@ -15,35 +15,35 @@ gallery_robocup_rescue:
 
 ---
 
-## Die Motivation hinter der RoboCupRescue Robot League
+## The motivation behind the RoboCupRescue robot league
 
-Als praktisches Beispiel dient ein, durch ein Erdbeben, von Einsturz gefährdetes Gebäude, welches noch zu bergende Opfer beinhaltet. Ein Roboter zur Ortung von Gefahren für Rettungskräfte, beziehungsweise zur Ortung von Opfern in einem Katastrophengebiet, soll deswegen für die Rescue-League entwickelt werden. Durch das Vorschicken eines solchen Roboters, können sich Rettungskräfte gezielt auf die Gefahren vorbereiten und Opfer bergen.
+A typical application for such a robot is a building in danger of collapsing after an earthquake. In this case the robot can search for and locate victims or sources of danger for rescue organisations. 
+A robot developed and built for the Rescue-League should enable rescue organisations a safe operation and the possibility to prepare for any dangers.
 
+## What is the RoboCupRescue robot league?
 
+The RoboCupRescue robot league is an international competition with the goal of developing, researching and demonstrating the usability of robots in rescue operations. 
+There are two leagues: 
 
-## Was ist die RoboCupRescue Robot League?
+ * The purpose of the simulation-league is to exercise the coordination of rescue units in a desolate town
+ * In the robot-league mobile rescue robots have to search for survivors in premade rooms and arenas either independently or controlled by a tele operator. 
 
-Die RoboCupRescue Robot League ist eine internationale Liga mit dem Ziel die Entwicklung, Erforschung und Demonstration erweiterter Roboterfunktionen für Rettungskräfte, die während Katastrophen eingesetzt werden können, voran zu treiben. In der Simulationsliga wird die Koordination von Rettungseinheiten in einer verwüsteten Stadt geprobt, während in der Roboterliga in konstruierten verwüsteten Räumen mithilfe von mobilen Robotern eigenständig nach Überlebenden gesucht werden soll.
-Dabei treffen sich jedes Jahr ca. 2000 Wissenschaftler und Studenten aus der ganzen Welt, um ihre Teams in Wettkämpfen gegeneinander antreten zu lassen. Während der Wettkämpfe findet parallel ein Kongress statt, bei dem neue wissenschaftliche Erkenntnisse aus dem Bereich Künstliche Intelligenz und Robotik ausgetauscht werden
+Each year around 2000 developers, scientists and students from around the world meet to compete against each other in teams. 
+During the competitions a congress also takes place, to share new knowledge from the areas of artificial intelligence and robotics.
 
+## The arenas of RoboCup Rescue:
 
-
-## Die Arenen von RoboCup Rescue:
-
-Ein teilnehmendes Team muss seinen Roboter durch unterschiedliches Terrain navigieren.
-Dieses Terrain wird in drei Arenen unterteilt. Die Arenen werden mit den Farben gelb, orange und rot gekennzeichnet, wobei gelb den geringsten und rot den härtesten Schwierigkeitsgrad symbolisiert.
-
+Each participating team has to navigate it's robot through diversified terrain, which is split in three arenas. Each one is marked by a different color ranging from yellow to orange to red, identifying the area's difficulty.
 {% include gallery id="gallery_robocup_rescue" caption="RoboCup 2015 in Magdeburg" %}
 
 
-## Die "Opfer" innerhalb der Arenen
+## The victims/survivors placed in the arenas
 
-Die Opfer, welche in den Arenen mittels Puppen repräsentiert werden, sollen über verschiedenste Sensorik mit dem Roboter erkannt werden:
+The victims are represented by dolls, which the robots have to recognise with the help of different sensors:
 
-* Visuelle Opfer-Erkennung
-* Akustische Opfer-Erkennung
-* Opfer-Erkennung über den Kohlenstoffdioxid-Ausstoß
-* Thermische Opfer-Erkennung
+ * visual detection
+ * acoustic detection
+ * carbon-dioxide emission
+ * thermic detection
 
-
-Weiters soll auch das Auswerten von QR-Codes in den Arenen möglich sein.
+A further requirement is to be able to scan QR-codes, which are placed around the arena.
