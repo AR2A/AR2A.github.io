@@ -62,7 +62,7 @@ gallery_buck-converter:
 
 ## Ros on Intel-NUC
 
-All other components are connected via USB to an Intel NUC board and can be managed via ROS.
+All components are connected via USB to an Intel NUC board and can be managed via ROS.
 [Read more...](/components/ros-on-nuc/)
 
 {% include gallery id="gallery_ros-on-nuc" caption="" %}

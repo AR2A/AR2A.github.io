@@ -1,115 +1,52 @@
 ---
 layout: single
-title: motor-controller-highpower-motorshield
+title: Highpower Spotlight for Arduino
 sidebar:
   nav: "sidenav"
+gallery_circuit:
+  - url: ../../images/components/spotlight/schematic.png
+    image_path: ../../images/components/spotlight/schematic.png
+    alt: "schematic.png"
+  - url: ../../images/components/spotlight/layout.png
+    image_path: ../../images/components/spotlight/layout.png
+    alt: "layout.png"
+
+gallery_result:
+  - url: ../../images/components/spotlight/front.png
+    image_path: ../../images/components/spotlight/front.png
+    alt: "front.png"
+  - url: ../../images/components/spotlight/back.png
+    image_path: ../../images/components/spotlight/back.png
+    alt: "back.png"
 ---
 
-##1. Introduction
-This motor-controller-package based on rosserial_arduino 
-brings support for the brushed motor controller based on the LXRobotics Highpower Motorshield to ROS (Robot Operating System) 
-and can be easily adapted for other motor-shields.
+The Spotlight provides the ability to control the rescue robot even in dark rooms. The LED drivers are controlled via ROS to adjust the brightness as required. The brightness can be regulated using a PWM which also offers the opportunity to switch every three LEDs seperately.
 
-**1.2. Features**
-* Own message-type for speed which can be adapted for individual needs.
-* Includes a heartbeat-service that calls a user-specific task if the arduino is disconnected from ROS. For example: stop the motor if ROS does not respond.
+## Power-LED
 
-**1.3. Overview**
-![alt tag](https://raw.githubusercontent.com/AR2A/motor-controller-highpower-motorshield/master/doc/img/schematic_overview.png)
+To obtain maximum illumination of the room it is neccessary to use high-power LEDs. A well-known manufacturer of these LEDs is Cree. The light intensity of a single LED is not bright enough therefore 9 LEDs are used seperated to three series of three LEDs each. If one driver fails 6 other LEDs can still will properly work.
 
-**1.4. Dependencies**
+![alt tag](../../images/components/spotlight/led.png)
 
-This software is built on the Robotic Operating System (ROS - Indigo) and on the Arduino IDE, which needs to be installed first. For further information how to install ROS see http://wiki.ros.org/indigo/Installation and for how to run the Arduino IDE directly in ROS see section 3.Installing the Software on http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
+## Heatsink
+Since high-power LEDs generate a lot of heat, it is neccessary to use a cooling system for heat dissipation. Depending on the current used to operate the LEDs, the brightness and heat will increase. For this purpose 2 possibilities for heat dissipation have been developed.
+The first method is that the soldering pads of the LEDs are bigger than neccessary to provide means of passive cooling, which means that a large part of the heat is emitted to the environment.
+The second method is a copper plane located on the back of the board behind the LEDs, to place a heat sink or an external cooler on. This surface is contacted with the enlarged front pads in several places, to dissipate heat.
 
+![alt tag](../../images/components/spotlight/heatsink.png)
 
-##2. How to Install
-In order to install the motor controller, clone the latest version from the repository into your catkin workspace, compile the packages and upload to the Arduino Uno using ROS.
+## Connection with ROS
 
-**2.1.Download the Source Code**
+To make the LEDs controllable by ROS it is necessary to provide both, a microcontroller and a USB to serial converter. An ATMEGA328 is used as microcontroller and a FT232 from FTDI is used as USB to serial converter. The design provides the possibility to operate the spotlight like an Arduino.
 
-Move to the src-folder in your catkin-workspace:
+## Circuit
 
-    $ cd ~/catkin_ws/src/
+The circuit design shows the components used and their layout.
 
-Clone the repository:
-
-    $ git clone https://github.com/AR2A/motor-controller-highpower-motorshield
+BILD: Schematic.png BILD: Layout.png
 
 
-**2.2. Build the Packages**
+## Result
 
-Travis Build Status:
-
-[![Build Status](https://travis-ci.org/AR2A/motor-controller-highpower-motorshield.svg?branch=master)](https://travis-ci.org/AR2A/motor-controller-highpower-motorshield)
-
-Move to your catkin-workspace:
-
-    $ cd ~/catkin_ws/
-
-Compile the packages:
-
-    $ catkin_make
-    
-If you can't generate the custom messages, please run the following commands:
-
-    $ catkin_make arduino_motor_control_generate_messages
-    $ source devel/setup.bash
-    $ cd src/motor-controller-highpower-motorshield/arduino_motor_control/firmware/
-    $ rm -r ros_lib/
-    $ rosrun rosserial_arduino make_libraries.py .
-    $ cd ~/catkin_ws
-    $ catkin_make 
-
-**2.3 Upload to the Arduino Uno**
-
-Now connect an Arduino Uno, confirm that it comes up as /dev/ttyACM1 (or change the firmware's CMakeLists.txt accordingly), and program it:
-
-    $ catkin_make arduino_motor_control-upload
-
-
-##3. How to Launche
-Move to your catkin-workspace:
-
-    $ cd ~/catkin_ws/
-
-To add the workspace to your ROS environment you need to source the generated setup file:
-
-    $ source devel/setup.bash
-
-You can launch the motor controller node with:
-
-    $ roslaunch motor_startup motor_startup.launch
-
-
-##4. ROS API
-
-**4.1. Node: arduino_motor_control**
-
-This Node runs directly on the Arduino Uno, monitors the current power consumption, controls the motor and includes a heartbeat-service that calls a user-specific task if the arduino is disconnected from ROS.
-
-4.1.1. Subscribed Topics
-* speed (arduino_motor_control/speed):
-
-4.1.2. Published Topics
-* current (arduino_motor_control/current):
-
-4.1.3. Services
-* heartbeat (arduino_motor_control/heartbeat):
-
-
-**4.2. Node: motor_control_heartbeat_client**
-
-This is the Heartbeat-Client and runs on the main ROS-System.
-
-4.2.1 Needed Services
-* heartbeat (arduino_motor_control/heartbeat):
-
-
-**4.3. Node: motor_startup**
-
-Contains the launch file.
-
-##5. Bugs & Feature Requests
-
-Please report bugs and request features using the [Issue Tracker](https://github.com/AR2A/motor-controller-highpower-motorshield/issues).
+BILD: front.png BILD: back.png
 
