@@ -24,6 +24,6 @@ sidenav:
         url: /components/motor-controller/
       - title: "Spotlight"
         url: /components/spotlight/
-      - title: "Buck-Converter"
+      - title: "Power Supply"
         url: /components/buck-converter/
 

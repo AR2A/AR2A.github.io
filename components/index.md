@@ -90,7 +90,7 @@ But I must explain to you how all this mistaken idea of denouncing pleasure and 
 
 ## Spotlight
 
-But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
+The Spotlight provides the ability to control the rescue robot even in dark rooms. The LED drivers are controlled via ROS to adjust the brightness as required. The brightness can be regulated using a PWM which also offers the opportunity to switch every three LEDs seperately.
 [Read more...](/components/spotlight/)
 
 {% include gallery id="gallery_spotlight" caption="" %}
