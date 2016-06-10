@@ -1,7 +1,20 @@
 ---
 layout: single
-title: FH Upper Austria, Hagenberg Campus
+title: LXRobotics
 ---
+
+
+
+![LXRobotics GmbH](/images/credits/LXRobotics_Logo.png "LXRoboticsLogo")
+
+LXRobotics GmbH<br>
+Landersdorf 70<br>
+3124 Wölbling/Austria<br>
+<i class="fa fa-envelope"></i> Email: office@lxrobotics.com<br>
+<i class="fa fa-home"></i> Website: www.lxrobotics.com<br><br><br>
+
+
+# FH Upper Austria, Hagenberg Campus
 
 ![FH Upper Austria, Hagenberg Campus](/images/credits/fhooe-campus-hagenberg.jpg "FH Upper Austria, Hagenberg Campus")
 
