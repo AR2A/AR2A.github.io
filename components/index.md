@@ -72,7 +72,7 @@ All components are connected via USB to an Intel NUC board and can be managed vi
 
 ## Imu
 
-But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
+This is a ROS package developed to calibrate and fuse the orientation data provided by an Polulu MiniImu v9. The ROS MiniImu Calibration and Sensor Fusion Packages are tested under ROS Indigo and Ubuntu 14.04.
 [Read more...](/components/imu/)
 
 {% include gallery id="gallery_imu" caption="" %}
@@ -81,7 +81,7 @@ But I must explain to you how all this mistaken idea of denouncing pleasure and 
 
 ## Motor-Controller
 
-But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. 
+This motor-controller-package brings support for the brushed motor controller based on the LXRobotics Highpower Motorshield to ROS and can be easily adapted for other motor-shields.
 [Read more...](/components/motor-controller/)
 
 {% include gallery id="gallery_motor" caption="" %}
